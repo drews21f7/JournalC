@@ -8,24 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		3A00E10722CA99A500395772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E10622CA99A500395772 /* AppDelegate.m */; };
-		3A00E10A22CA99A500395772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E10922CA99A500395772 /* ViewController.m */; };
 		3A00E10D22CA99A500395772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A00E10B22CA99A500395772 /* Main.storyboard */; };
 		3A00E10F22CA99A700395772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00E10E22CA99A700395772 /* Assets.xcassets */; };
 		3A00E11222CA99A700395772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A00E11022CA99A700395772 /* LaunchScreen.storyboard */; };
 		3A00E11522CA99A700395772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E11422CA99A700395772 /* main.m */; };
+		3A00E11F22CA9B3D00395772 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E11E22CA9B3D00395772 /* Entry.m */; };
+		3A00E12322CA9DF100395772 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E12222CA9DF100395772 /* EntryController.m */; };
+		3A00E12722CAAC3900395772 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E12622CAAC3900395772 /* EntryListTableViewController.m */; };
+		3A00E12B22CAB4F100395772 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00E12A22CAB4F100395772 /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A00E10222CA99A500395772 /* JournalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A00E10522CA99A500395772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A00E10622CA99A500395772 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A00E10822CA99A500395772 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A00E10922CA99A500395772 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A00E10C22CA99A500395772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A00E10E22CA99A700395772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A00E11122CA99A700395772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A00E11322CA99A700395772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A00E11422CA99A700395772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A00E11D22CA9B3D00395772 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		3A00E11E22CA9B3D00395772 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		3A00E12122CA9DF100395772 /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		3A00E12222CA9DF100395772 /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		3A00E12522CAAC3900395772 /* EntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		3A00E12622CAAC3900395772 /* EntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		3A00E12922CAB4F100395772 /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		3A00E12A22CAB4F100395772 /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +67,63 @@
 		3A00E10422CA99A500395772 /* JournalC */ = {
 			isa = PBXGroup;
 			children = (
+				3A00E11B22CA9A4B00395772 /* Resources */,
+				3A00E11C22CA9A6200395772 /* Views */,
+				3A00E12022CA9B4100395772 /* Models */,
+				3A00E12422CA9DF500395772 /* Model Controller */,
+				3A00E12822CAAC3D00395772 /* View Controllers */,
+			);
+			path = JournalC;
+			sourceTree = "<group>";
+		};
+		3A00E11B22CA9A4B00395772 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				3A00E10522CA99A500395772 /* AppDelegate.h */,
 				3A00E10622CA99A500395772 /* AppDelegate.m */,
-				3A00E10822CA99A500395772 /* ViewController.h */,
-				3A00E10922CA99A500395772 /* ViewController.m */,
-				3A00E10B22CA99A500395772 /* Main.storyboard */,
 				3A00E10E22CA99A700395772 /* Assets.xcassets */,
 				3A00E11022CA99A700395772 /* LaunchScreen.storyboard */,
 				3A00E11322CA99A700395772 /* Info.plist */,
 				3A00E11422CA99A700395772 /* main.m */,
 			);
-			path = JournalC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A00E11C22CA9A6200395772 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A00E10B22CA99A500395772 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A00E12022CA9B4100395772 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A00E11D22CA9B3D00395772 /* Entry.h */,
+				3A00E11E22CA9B3D00395772 /* Entry.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A00E12422CA9DF500395772 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A00E12122CA9DF100395772 /* EntryController.h */,
+				3A00E12222CA9DF100395772 /* EntryController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		3A00E12822CAAC3D00395772 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A00E12522CAAC3900395772 /* EntryListTableViewController.h */,
+				3A00E12622CAAC3900395772 /* EntryListTableViewController.m */,
+				3A00E12922CAB4F100395772 /* EntryDetailViewController.h */,
+				3A00E12A22CAB4F100395772 /* EntryDetailViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A00E10A22CA99A500395772 /* ViewController.m in Sources */,
+				3A00E12B22CAB4F100395772 /* EntryDetailViewController.m in Sources */,
+				3A00E12322CA9DF100395772 /* EntryController.m in Sources */,
+				3A00E11F22CA9B3D00395772 /* Entry.m in Sources */,
 				3A00E11522CA99A700395772 /* main.m in Sources */,
 				3A00E10722CA99A500395772 /* AppDelegate.m in Sources */,
+				3A00E12722CAAC3900395772 /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49NKW8MQX9;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49NKW8MQX9;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
